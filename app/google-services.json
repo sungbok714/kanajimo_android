@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "757273298706",
+    "project_id": "kanajimo-17b47",
+    "storage_bucket": "kanajimo-17b47.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:757273298706:android:7327d723c8bb2ecb6155cb",
+        "android_client_info": {
+          "package_name": "com.messeesang.kanajimo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "757273298706-b3ct3g8u45rm22liqeppo4u32aeshq3j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.messeesang.kanajimo",
+            "certificate_hash": "34c26b122696dfddc09e33c966cd57338ba7f206"
+          }
+        },
+        {
+          "client_id": "757273298706-fm0njdj8ngph6n1o5i73ojs9lbqmrkoe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPr9CV9yuBP8gkEL8skn-5ohkvT7r8Q2Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "757273298706-fm0njdj8ngph6n1o5i73ojs9lbqmrkoe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

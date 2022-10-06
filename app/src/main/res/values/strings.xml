@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">가낳지모</string>
+
+    <!-- notification -->
+    <string name="notification_channel_id">notification_channel_id_normal01</string>
+    <string name="notification_channel_name">일반</string>
+    <string name="notification_channel_description"></string>
+    <!-- Facebook -->
+    <string name="facebook_app_id">1004600956875536</string>
+    <string name="fb_login_protocol_scheme">fb1004600956875536</string>
+    <string name="facebook_client_token">dbf2ddb34c833d24a9e04cafa9ecd316</string>
+    <!-- Kakao -->
+    <string name="kakao_app_key">40ab38b7266cd4a4bf06dc431a23559a</string>
+    <string name="kakao_scheme">kakao40ab38b7266cd4a4bf06dc431a23559a</string>
+    <string name="kakaolink_host">kakaolink</string>
+    <!-- Naver -->
+    <string name="naver_client_id">XlE0i0sZU6tglY0OYIjs</string>
+    <string name="naver_client_secret">BNaZ_EqCZ9</string>
+</resources>

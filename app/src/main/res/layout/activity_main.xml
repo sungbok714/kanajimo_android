@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/btn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_white_border_top_gray"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_1"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:scaleType="fitCenter"
+            android:src="@drawable/selector_tab_menu" />
+
+        <ImageButton
+            android:id="@+id/btn_2"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:scaleType="fitCenter"
+            android:src="@drawable/selector_tab_home" />
+
+        <ImageButton
+            android:id="@+id/btn_5"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:scaleType="fitCenter"
+            android:src="@drawable/selector_tab_challenge" />
+
+        <ImageButton
+            android:id="@+id/btn_3"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:scaleType="fitCenter"
+            android:src="@drawable/selector_tab_search" />
+
+        <ImageButton
+            android:id="@+id/btn_4"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:scaleType="fitCenter"
+            android:src="@drawable/selector_tab_mypage" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/layoutFragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btn_layout"
+        android:visibility="visible" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:max="100"
+        android:theme="@style/progressbar_color"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints" />
+
+</RelativeLayout>

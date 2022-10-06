@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scroll_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/toolbar"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <RelativeLayout
+                android:id="@+id/layoutTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:paddingLeft="16dp"
+                android:paddingTop="0dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="0dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="18dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_push_agree_logo" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_push_agree_title" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5" />
+
+            <RelativeLayout
+                android:id="@+id/layoutCenter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/layoutBottom"
+                android:layout_below="@id/layoutTop"
+                android:gravity="center"
+                android:paddingLeft="32dp"
+                android:paddingTop="0dp"
+                android:paddingRight="32dp"
+                android:paddingBottom="0dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_push_agree_setting_guide" />
+            </RelativeLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5" />
+
+            <RelativeLayout
+                android:id="@+id/layoutBottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:paddingLeft="32dp"
+                android:paddingTop="0dp"
+                android:paddingRight="32dp"
+                android:paddingBottom="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:text="앱 푸쉬를 수신 동의하시면"
+                        android:textColor="#3F3F3F"
+                        android:textSize="17dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:maxLines="3"
+                        android:text="케이펫,케이켓 전시회와 반려 생활 관련한 다양한\n이벤트,프로모션,서비스에 관한 알림을 받을 수 있습니다."
+                        android:textColor="#3F3F3F"
+                        android:textSize="13dp" />
+
+                    <android.widget.Space
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/txtAgree"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bt_purple_rounded"
+                        android:gravity="center"
+                        android:paddingLeft="16dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="16dp"
+                        android:paddingBottom="10dp"
+                        android:text="알림 받기"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <android.widget.Space
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/txtCancel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/bt_gray_rounded"
+                        android:gravity="center"
+                        android:paddingLeft="16dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="16dp"
+                        android:paddingBottom="10dp"
+                        android:text="일주일간 보지 않기"
+                        android:textColor="@color/color_gray_dark"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
